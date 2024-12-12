@@ -1,60 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Jennifer UX/UI Designer</title>
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="icon" href="/images/logo_favicon.png" type="image/png">
-  </head>
-  <body>
-    <!--header section-->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="ux.html">UX</a></li>
-                <li><a href="illustration.html">Illustration</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <h1>Let's Connect</h1>
-        <h2>Collaboration starts with a "hello."</h2>
-    </header>
+
+
 
     <!--contact section-->
-    <section id="contact">
-        <h3>We'd love to hear from you! Fill out the form, and we'll get back to you soon. </h3>
-        <img src="/images/wave-hello.png" alt="Illustration of two people interacting with each other - one person waves hello while the other person smiles back at them">
-        <form id="contact_form" action="">
-            <label for="fname">First Name:</label>
-            <input type="text" id="fname" name="fname" required><br>
-            
-            <label for="lname">Last Name:</label>
-            <input type="text" id="lname" name="lname" required><br>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <p id="error" style="color: red; display: none;">Please enter a valid email address.</p><br>
-            
-            <label for="message">Tell me what's on your mind (max 300 characters):</label><br>
-            <textarea id="message" name="message" rows="5" cols="50" maxlength="300"></textarea>
-            <p id="charCount">0/300</p><br>
-            
-            <button id="submitButton" type="submit">Submit</button>
-        </form>
-    </section>
+    
 
-    <!--Contact section-->
-    <footer id="contact">
-        <h2>Get in Touch</h2>
-        <p>Collaboration starts with a simple hello.</p>
-        <ul>
-            <li><a href="mailto:jennifer.le1@edu.sait.ca">jennifer.le1@edu.sait.ca</a></li>
-            <li><a href="www.linkedin.com/in/jenniferle-ux" target="_blank">LinkedIn</a></li>
-        </ul>
-    </footer>
-<script src="/portfolio.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Jennifer Le - UX/UI Design Portfolio</title>
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="icon" href="/images/logo_favicon.png" type="image/png">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ux.html">UX</a></li>
+                    <li><a href="illustration.html">Illustration</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="intro">
+                <h1>Let's Connect</h1>
+                <p>Collaboration starts with a "hello."</p>
+            </section>
+
+            <section id="contact">
+                <h2>We'd love to hear from you! Fill out the form, and we'll get back to you soon. </h2>
+                <img src="/images/wave-hello.png" alt="Illustration of two people interacting with each other - one person waves hello while the other person smiles back at them">
+                <form id="contact_form" action="">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" required><br>
+                    
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" required><br>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <p id="error" style="color: red; display: none;">Please enter a valid email address.</p><br>
+                    
+                    <label for="message">Tell me what's on your mind (max 300 characters):</label><br>
+                    <textarea id="message" name="message" rows="5" cols="50" maxlength="300"></textarea>
+                    <p id="charCount">0/300</p><br>
+                    
+                    <button id="submitButton" type="submit">Submit</button>
+                </form>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <h3>Contact</h3>
+            <ul>
+                <li>Email: <a href="mailto:jennifer.le1@edu.sait.ca">jennifer.le1@edu.sait.ca</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/jenniferle-ux" target="_blank">@jenniferle-ux</a></li>
+            </ul>
+        </footer>
+        <script src="/portfolio.js"></script>
+    </body>
 </html>
