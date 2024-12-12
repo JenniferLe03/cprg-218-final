@@ -282,8 +282,13 @@ body {
         transition: color 0.3s ease;
     }
       
-      #footer a:hover {
+    #footer a:hover {
         color: #95b1ee;
+    }
+
+    footer p {
+        font-size: 0.7em;
+        margin-top: 2%;
     }
 }
       
