@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const charCount = document.getElementById('charCount');
     const error = document.getElementById('error');
     const form = document.getElementById('contact_form');
-    const inputs = form.querySelectorAll('input, textarea');
 
     messageInput.addEventListener('input', () => {
         const currentLength = messageInput.value.length;
@@ -29,18 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    inputs.forEach(input => {
-        input.addEventListener('input', () => {
-            localStorage.setItem(input.name, input.value);
-        });
-    });
-
-    window.addEventListener('load', () => {
-        inputs.forEach(input => {
-            const savedValue = localStorage.getItem(input.name);
-            if (savedValue) input.value = savedValue;
-        });
-    });
 });
 
 document.querySelectorAll('button').forEach(button => {
