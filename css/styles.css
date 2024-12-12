@@ -245,6 +245,7 @@ body {
             font-size: 0.9em;
             border-radius: 8px;
             font-weight: 550;
+            font-family: 'Quicksand', sans-serif;
         }
 
         button:hover {
