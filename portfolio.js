@@ -8,27 +8,23 @@ document.addEventListener('DOMContentLoaded', () => {
     messageInput.addEventListener('input', () => {
         const currentLength = messageInput.value.length;
         charCount.textContent = `${currentLength}/300`;
-    
-        if (currentLength > 250) {
-            charCount.style.color = 'red';
-        } else {
-            charCount.style.color = '#666';
-        }
+
+        charCount.style.color = currentLength > 250 ? 'red' : '#666';
     });
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
         const emailValue = emailInput.value.trim();
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
         if (!emailRegex.test(emailValue)) {
-            error.style.display = 'block'; 
-            emailInput.focus();
+            error.style.display = 'block';
         } else {
-            error.style.display = 'none'; 
-            alert("Submission complete - we'll take it from here!"); 
+            error.style.display = 'none';
+            alert("Thanks for saying hello! I can't wait to chat with you soon.");
             form.reset();
-            charCount.textContent = '0/300'; 
-            charCount.style.color = '#666'; 
+            charCount.textContent = '0/300';
+            charCount.style.color = '#666';
         }
     });
 });
