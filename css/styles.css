@@ -225,8 +225,6 @@ body {
             padding: 25px;
             font-weight: 500;
             font-size: 1.1em;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px #95b1ee;
         }
 
         .contact_info_input, #message {
